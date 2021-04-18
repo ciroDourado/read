@@ -5,7 +5,7 @@ With these functions, you should only expect some string (any size) or nothing, 
 
 ###### obs.: if you are interested in another tool for string manipulation, check the following repository. It's about extracting a slice from a given String.
 
-[Slice](https://github.com/ciroDourado/slice)
+[slice](https://github.com/ciroDourado/slice)
 
 ## Sections
 
@@ -15,19 +15,18 @@ With these functions, you should only expect some string (any size) or nothing, 
 
 ## 1. Applying into your code
 
-Usar este "módulo" requer nada mais do que incluir estes arquivos no mesmo diretório de seu projeto.
-Por exemplo: você está colocando seus códigos-fonte em uma pasta específica, então também inclua os códigos-fonte de ArvoreBinaria, NoArvore e Tabela da minha pasta src/.
+Using this library requires nothing more than moving the source-code at src/ into your project diretory that hold your .c files. 
 
-De resto, apenas o óbvio. Para compilar todos os arquivos deste diretório, pelo terminal faça:
-
-```
-csc /out:[nome_de_seu_executavel] *.cs
-```
-
-Caso você utilize o mono, para executar o código seria simplesmente:
+Finally, just the obvious, use GCC to compile all the code inside :
 
 ```
-mono [nome_de_seu_executavel]
+gcc *.c -o [executable_name]
+```
+
+Execute with (if you are in a Windows OS, use a backslash instead):
+
+```
+./[executable_name]
 ```
 
 **[Back into sections](https://github.com/ciroDourado/read#sections)** 
@@ -36,43 +35,45 @@ mono [nome_de_seu_executavel]
 
 Um breve resumo:
 
-| Método    | Parâmetro           | Retorno                                              |
-|-----------|---------------------|------------------------------------------------------| 
-| Inserir   | Instância de Nó*    | Nenhum                                               |
-| Inserir   | Instância de Tabela | Nenhum                                               |
-| EstaVazia | Nenhum              | Verdadeiro ou falso                                  |
-| Contar    | Nenhum              | Número de nós existentes na árvore                   |
-| Buscar    | ID do elemento      | Em caso de sucesso: instância do nó; senão: null     |
-| Remover   | ID do elemento      | Em caso de sucesso: instância da tabela; senão: null |
+| Function | Parameter                                                                       | Return                 |
+|----------|---------------------------------------------------------------------------------|------------------------| 
+| read     | String literal to be printed before your reading process, null to print nothing | String with user input |
+| clean    | String reference                                                                | Nothing                |
 
-###### * Certifique-se de que sua instância de nó contenha uma instância de Tabela.
+If you want to take an example, check the code inside test/, at main.c.
 
-Você pode tomar como referência o arquivo Principal.cs dentro de src/. Eu estive usando ele para testar meu código no período de desenvolvimento.
-Expondo apenas obviedades aqui, toda variável/instância do tipo ArvoreBinaria deve ser inicializada com a sentença new ArvoreBinaria(), ex.:
+"read( )" expects some hardcoded string to be passed, which will serve as some sort of label. For example
 
 ```
-var minhaArvore = new ArvoreBinaria();
+printf("Say your name: \n");
+char* yourName = read(" >>> ");
 ```
 
-Com isso você terá em mãos uma árvore vazia. Para inserir elementos, estão disponíveis duas funções Inserir: uma recebe como parâmetro uma instância de Tabela, e outra recebe uma instância de NoArvore. Internamente, o código de árvore insere na verdade instância de nós, as quais encapsulam instâncias de Tabela. Porém, para facilitar a vida do programador (tornando o código bem menos verboso), também é possível passar apenas a instância de Tabela, a qual será colocada dentro de um novo nó alocado.
+Will be printed as follows:
 
 ```
-var primeiroNo = new NoArvore(new Tabela(...));
-minhaArvore.Inserir(primeiroNo);
-
-// aqui seria um segundo nó
-minhaArvore.Inserir(new Tabela(...));
+$ Say your name:
+$  >>> Kimi no na wa
 ```
-Funções de contagem (usando iteração), busca e remoção seguem a mesma lógica; apenas verifique a assinatura dentro dos códigos-fonte.
+
+If you don't want any message, just pass as null:
+
+```
+printf("Say your name: \n");
+char* yourName = read(NULL);
+```
+```
+$ Say your name:
+$ Kimi no na wa
+```
+
+"clean( )" only expects a dynamically-allocated string to be freed. If null is passed, nothing will happen.
 
 **[Back into sections](https://github.com/ciroDourado/read#sections)**
 
 ## 3. Contribuing
 
-Caso você queira fazer algum comentário, sugerir alguma mudança, elogiar ou até mesmo falar mal diretamente kkkkkk mande um e-mail para mim. Ele está como público neste meu perfil. Mas de qualquer forma, meu endereço é: `ciro dot brz at gmail dot com`; lembre-se de trocar os dots e at kkkk
-
-Este é um código feito durante meu tempo livre - mais precisamente nas minhas férias. Como no próximo semestre da faculdade (de novo, estou escrevendo isso no dia 13 de abril de 2021) teremos uma matéria sobre estruturas de dados usando C#, estou aproveitando para aprender a linguagem antes mesmo de começarem as aulas. 
-
-Então, já me perdoem por qualquer erro ou falha besta encontrada. C:
+If you want to leave a comment, suggest an update (or anything else), mail me: `ciro dot brz at gmail dot com `.
+Btw, I'm brazilian; my deepest apologies if I wrote something wrong, or mispelled something.
 
 **[Back into sections](https://github.com/ciroDourado/read#sections)** 
