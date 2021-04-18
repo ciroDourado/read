@@ -3,6 +3,10 @@ Due to the complexity that writing some code that expects a string input from th
 
 With these functions, you should only expect some string (any size) or nothing, that simple.
 
+###### obs.: this is a refactored version. You can check my first attempt to code this at:
+
+[input_without_overflow](https://github.com/ciroDourado/input_without_overflow)
+
 ###### obs.: if you are interested in another tool for string manipulation, check the following repository. It's about extracting a slice from a given String.
 
 [slice](https://github.com/ciroDourado/slice)
