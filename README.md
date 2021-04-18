@@ -30,7 +30,7 @@ Caso você utilize o mono, para executar o código seria simplesmente:
 mono [nome_de_seu_executavel]
 ```
 
-**[Back into sections](https://github.com/ciroDourado/read##sections)** 
+**[Back into sections](https://github.com/ciroDourado/read#sections)** 
 
 ## 2. How to use it
 
@@ -65,7 +65,7 @@ minhaArvore.Inserir(new Tabela(...));
 ```
 Funções de contagem (usando iteração), busca e remoção seguem a mesma lógica; apenas verifique a assinatura dentro dos códigos-fonte.
 
-**[Back into sections](https://github.com/ciroDourado/read##sections)**
+**[Back into sections](https://github.com/ciroDourado/read#sections)**
 
 ## 3. Contribuing
 
@@ -75,4 +75,4 @@ Este é um código feito durante meu tempo livre - mais precisamente nas minhas 
 
 Então, já me perdoem por qualquer erro ou falha besta encontrada. C:
 
-**[Back into sections](https://github.com/ciroDourado/read##sections)** 
+**[Back into sections](https://github.com/ciroDourado/read#sections)** 
