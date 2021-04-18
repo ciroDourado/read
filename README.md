@@ -33,8 +33,6 @@ Execute with (if you are in a Windows OS, use a backslash instead):
 
 ## 2. How to use it
 
-Um breve resumo:
-
 | Function | Parameter                                                                       | Return                 |
 |----------|---------------------------------------------------------------------------------|------------------------| 
 | read     | String literal to be printed before your reading process, null to print nothing | String with user input |
