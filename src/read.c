@@ -1,10 +1,10 @@
 #include "read.h"
 
 
-char* read(const char* message) {
-    _print(message);
-    return _alloc_and_read();
-} // end read
+// char* read(const char* message) {
+//     _print(message);
+//     return _alloc_and_read();
+// } // end read
 
 
 void clean(char** string) {

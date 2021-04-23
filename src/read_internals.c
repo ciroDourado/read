@@ -1,11 +1,11 @@
 #include "read_internals.h"
 
 
-void _print(const char* message) {
-    message != NULL?
-        printf(message):
-        printf("");
-} // end _print
+// void _print(const char* message) {
+//     message != NULL?
+//         printf(message):
+//         printf("");
+// } // end _print
 
 
 char* _alloc_and_read() {

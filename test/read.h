@@ -14,7 +14,7 @@
 // * Pass some hardcoded string to be
 //   printed before your reading process
 // * or NULL, if you only want to read
-char* read  (const char*);
+// char* read  (const char*);
 
 // Frees any heap string that you
 // want to pass. Nothing special.
