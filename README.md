@@ -4,16 +4,13 @@ Due to the complexity that writing some code that expects a string input from th
 With these functions, you should only expect some string (any size) or nothing, that simple.
 
 ###### obs.: this is a refactored version. You can check my first attempt to code this at:
-
 [input_without_overflow](https://github.com/ciroDourado/input_without_overflow)
 
 ###### obs. 2: if you are interested in another tool for string manipulation, check the following repository. It's about extracting a slice from a given String.
-
 [slice](https://github.com/ciroDourado/slice)
 
 ###### obs. 3: wanna check out a variadic version (more flexible way of giving args) of this function? Click on the link bellow that goes to another repository
-
-[slice](https://github.com/ciroDourado/read_variadic)
+[read_variadic](https://github.com/ciroDourado/read_variadic)
 
 ## Sections
 
